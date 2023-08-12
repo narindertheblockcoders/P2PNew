@@ -105,6 +105,7 @@ export default function Direct() {
       let res = await axios.post("/api/getData");
       const response = res.data;
       console.log(response, "to get response from api");
+      console.log(res,"ressssdd")
       setAdded(added + 1);
       setTotalData(response?.data?.data?.data);
       const endDates = response?.data?.data?.data;
@@ -550,7 +551,7 @@ export default function Direct() {
                         <ul>
                           <li className="active">
                             <Link
-                              href="/stakingDashboard"
+                              href="/stakings"
                               class="stake-a active"
                             >
                               stacking
