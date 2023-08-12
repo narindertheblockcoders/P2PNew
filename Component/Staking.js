@@ -721,8 +721,10 @@ export default function Direct() {
               {/* <a href="" class="stakeing-ha">
                 BuyP2pBIt <img class="stakeing-ha" onClick={()=>setShow(true)}src="/arrowLeft.png" atl="" />
               </a> */}
+
+              <Link href={"https://quickswap.exchange/#/swap/v3?currency0=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&currency1=0x7bbf85d26b305a030916be29aa9d754ee0f8bf60&swapIndex=0"}>
               <h6
-                onClick={() => setShow(true)}
+                // onClick={() => setShow(true)}
                 style={{
                   display: "flex",
                   float: "right",
@@ -739,6 +741,8 @@ export default function Direct() {
                   />
                 </span>
               </h6>
+
+              </Link>
             </div>
 
             <div class="stacking-tabs">
