@@ -142,7 +142,7 @@ function MobileReward() {
                   </svg>
                 </Link>
               </li>
-              {/* <li>
+ <li>
                 <Link href="/staking">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +189,7 @@ function MobileReward() {
                   </svg>
                 </Link>
               </li>
-              <li>
+                        {/*    <li>
                 <Link href="/ewallet">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -71,6 +71,7 @@ export default function Direct() {
   const { write: write } = useContractWrite({
     mode: "args",
     address: "0x88eA70B6e6FE05530614D6B658388c89Ef73934E",
+    
     abi: ContractInterface,
     functionName: "startNewStaking",
     overrides: {
@@ -189,7 +190,7 @@ export default function Direct() {
     console.log(response, "response staking heee");
     const testData = response.data.data.data?.map(async (item) => {
       const provider = new ethers.providers.JsonRpcProvider(
-        "https://rpc-mumbai.maticvigil.com"
+        "https://polygon-rpc.com/"
       );
       let daiContract;
       let getStakingId;
@@ -1392,7 +1393,7 @@ export default function Direct() {
                   </svg>
                 </Link>
               </li>
-              {/* <li class="active">
+           <li class="active">
              <Link href="/staking">
                <svg
                  xmlns="http://www.w3.org/2000/svg"
@@ -1439,7 +1440,7 @@ export default function Direct() {
                </svg>
              </Link>
            </li>
-           <li>
+              {/* <li>
              <Link href="/ewallet">
                <svg
                  xmlns="http://www.w3.org/2000/svg"
